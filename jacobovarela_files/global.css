@@ -1,5 +1,5 @@
 a{
-	color:#eba613;
+	color:#4f9e0e;
 }
 
 nav a, footer div a{
@@ -12,7 +12,7 @@ footer{
 }
 
 body{
-	font-family: Garamond, serif;
+	font-family: "Futura", serif;
 	margin: auto;
 	padding:18px;
 	max-width: 600px;
