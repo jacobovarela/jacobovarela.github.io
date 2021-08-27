@@ -37,3 +37,26 @@ img, video{
 	max-width: 600px;
 	border: 2px solid #eba613;
 }
+
+p:hover {
+	color: #000000;
+	background-color: #0e9e8b21;
+	border-radius: 7px;
+  }
+/* 
+p {
+	animation-duration: 1s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-top: 100%;
+	  width: 300%;
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  } */
