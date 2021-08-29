@@ -39,9 +39,8 @@ img, video{
 }
 
 p:hover {
-	color: #000000;
 	background-color: #0e9e8b21;
-	border-radius: 7px;
+	border-radius: 1px;
   }
 /* 
 p {
