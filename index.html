@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,6 +21,80 @@
     <link rel="stylesheet" type="text/css" href="./jacobovarela_files/global.css">
     <script type="text/javascript" async="" src="./jacobovarela_files/js"></script>
     <script src="./jacobovarela_files/js(1)" async=""></script>
+    <style>
+        .timeline {
+            position: relative;
+            padding: 50px 0;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* .timeline:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 10%;
+            width: 2px;
+            margin-left: -1px;
+            background-color: #ccc;
+        } */
+
+        .timeline__item {
+            font-family: "Gill Sans", serif;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline__item:before,
+        .timeline__item:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .timeline__item:before {
+            content: attr(data-year);
+            display: inline-block;
+            width: 200px;
+            padding: 4px 0;
+            background-color: #0e9e8b46;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            top: -35px;
+            transform: translateX(-50%);
+        }
+
+        .timeline__item__title {
+            font-family: "Gill Sans", serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .timeline__item__subtitle {
+            font-family: "Gill Sans", serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .timeline__item__description {
+            font-family: "Gill Sans", serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,37 +105,83 @@
         <a href="explanations.html">Explanations</a>
     </nav>
     <h1>Jacobo Varela 👨&zwj;💻</h1>
-    <!-- <p><small>"It's my website and I'll write what I want to."</small></p>
-        <p>In late 2020 I came across <a href="https://news.ycombinator.com/item?id=25135752" target="_blank" rel="noopener noreferrer">this post</a> on HackerNews about building a website from scratch, with very basic HTML, CSS and Javascript. So I got inspired and decided I wanted to create my own portfolio website.</p>
-        <p>This is something that I've been planning to do since I finished my <a href="https://medium.com/carbon-engineering/how-i-became-a-data-scientist-ca8a8148a010" target="_blank" rel="noopener noreferrer">Data Science bootcamp</a> back in 2018, but every time I got sidetracked because "you already have your CV and projects on LinkedIn, why would you spend time or money on this".</p>
-        <p>I now look at it as an opportunity to learn something new, this "project" forces me to dive into web development, code in a new language (javascript) and maybe explore a new framework (vue.js ?).</p>
-        <ul>
-            <li>First thing I did was to buy the domain name through Namecheap.</li>
-            <li>I decided to use GitHub pages to host the website, I already know how to use the platform and it's easy to set up the custom domain name.</li>
-            <li>I soon learnt that the browser can't run Python, so in future iterations I am planning to use Netlify to host the website.</li> -->
+    <div class="timeline">
+        <div class="timeline__item" data-year="2022-Now">
+            <div class="timeline__item__title">Meta</div>
+            <div class="timeline__item__subtitle">Data Scientist</div>
+            <div class="timeline__item__description">Building zero to one products in Reality Labs.</div>
+        </div>
+        <div class="timeline__item" data-year="2020-2022">
+            <div class="timeline__item__title">Cabify</div>
+            <div class="timeline__item__subtitle">Data Analyst</div>
+            <div class="timeline__item__description">
+                <li>
+                    Bring data closer to engineers, designers and business managers
+                    in the Rider and Delivery teams by building data sources and dashboards of the main metrics and
+                    KPIs.
+                </li>
+                <li>
+                    Test hypotheses about the product by developing and monitoring
+                    experiments (A/B tests).
+                </li>
+            </div>
+        </div>
+        <div class="timeline__item" data-year="2018-2020">
+            <div class="timeline__item__title">Carbon</div>
+            <div class="timeline__item__subtitle">Data Scientist</div>
+            <div class="timeline__item__description">
+                <li>
+                    Increased monthly loan disbursements by building machine-learning
+                    credit scorecards and income prediction models.
+                </li>
 
-    <!-- <li>...</li> -->
+                <li>Accelerated the development of new scorecard models by re-building the loan offer engine from
+                    scratch
+                    (Python stack).
+                </li>
+                <li>Reduced loan defaults by implementing pre-delinquency models and fraud prevention strategies using a
+                    customer graph db (Neo4j).
+                </li>
 
-    <!-- </ul> -->
-    <!-- <p style="text-align: center;">&nbsp;</p>
-    <p style="text-align: center;">🚧 WEBSITE UNDER CONSTRUCTION 🚧</p>
-    <p style="text-align: center;">&nbsp;</p> -->
+                <li>Improved visibility of customer behaviour by building a single customer view, together with an
+                    internal reporting dashboard to monitor loan disbursements.
+                </li>
 
-    <!-- <img src="./jacobovarela_files/IMG_2796.jpg" width="200" height="200">
+                <li>Boosted customer engagement by (1) launching SMS marketing campaigns powered by A/B testing and (2)
+                    creating a new customer segmentation scheme based on lifetime value and activity, allowing Carbon to
+                    reward valuable customers with perks.
+                </li>
+            </div>
+        </div>
+        <div class="timeline__item" data-year="2017-2018">
+            <div class="timeline__item__title">Ferrovial</div>
+            <div class="timeline__item__subtitle">Analyst</div>
+            <div class="timeline__item__description">Market Intelligence Analyst at the Centre of Excellence for Cities
+                (Smart Cities) at Ferrovial Services.
+            </div>
+            <div class="timeline__item__description">
+                My position involved tasks such as:
+                <li>
+                    Identification and management of urban innovation information sources.
+                </li>
+                <li>Selection and proposal of technologies to implement in ongoing contracts or pilots.
 
-    <iframe src="https://coin360.com/widget/map.html" frameborder="0" title="Coin360.com: Cryptocurrency Market State" width="600" height="300"></iframe>
-
-    <footer>
-        <!-- <p>Follow me:</p>
-			<div>
-				<a href="https://twitter.com/jacvarsic" target="_blank" rel="noopener noreferrer">Twitter</a>
-				<a href="https://www.linkedin.com/in/jacobo-varela/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/jacobovarela/" target="_blank" rel="noopener noreferrer">GitHub</a>
-			</div> -->
-    <!-- </footer> -->
+                </li>
+                <li>Development of the Innovative Solutions Catalogue and active participation in the selection and
+                    relationship with providers to compliment Ferrovial Services technological capabilities.
+                </li>
+                <li>Analysis of information and draw conclusions according to the objectives of Market Intelligence
+                    areas to elaborate strategic documentation internally and externally (studies, market analysis,
+                    reports,
+                    news, events).
+                </li>
+                <li>Active collaboration in events that position Ferrovial Services as a market leader in Smart Cities
+                    (Smart Cities Expo World Congress, South Summit, Smart Cities Congress, etc).
+                </li>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="./jacobovarela_files/global.js"></script>
 </body>
 
 </html>
-
-<!-- <p style="text-align: center;"><small>202108</small></p> -->
